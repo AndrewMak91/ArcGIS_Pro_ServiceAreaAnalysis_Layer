@@ -20,13 +20,13 @@ try:
         raise arcpy.ExecuteError("Network Analyst Extension not available.")
 
     # Environment settings
-    output_dir = r'D:\Cases\CarWash\CarWash' # switch out with your workspace file path
+    output_dir = r'D:\SpatialAnalysis' # switch out with your workspace file path
     env.workspace = os.path.join(output_dir, "CarWash.gdb")
     env.overwriteOutput = True
 
     # Set network route feature dataset and input data -- set local envrionment parameters
     na_network_data_source = r'C:\ArcGIS\Business Analyst\US_2018\Data\Streets Data\NorthAmerica.gdb\Routing\Routing_ND' # point to Routing_ND feature dataset
-    input_gdb = r'D:\Cases\CarWash\CarWash\CarWash.gdb' # point to user geodatabase file path
+    input_gdb = r'D:\SpatialAnalysis\SpatialAnalysis.gdb' # point to user geodatabase file path
     
     layer_name = str('Service_Area_Analysis') # create layer name for OD Cost Matrix
     travel_mode = "Driving Time" # call travel mode for analysis
