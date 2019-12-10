@@ -1,7 +1,7 @@
 #################################################
 """
 Create and solve a service analysis layer for ArcPro
-Current ArcPro 2.3.2 NA
+Current ArcPro 2.x NA
 Author: Andrew Makowicki
 """
 #################################################
